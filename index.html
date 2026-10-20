@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola em Foco | Infraestrutura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Escola em Foco</h1>
+        <p>Infraestrutura, acessibilidade e qualidade de ensino</p>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#problemas">Problemas</a>
+            <a href="#documentario">Documentário</a>
+            <a href="#solucoes">Soluções</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="inicio">
+            <h2>Uma escola melhor começa com a mudança</h2>
+
+            <p>
+                Este projeto busca identificar problemas na infraestrutura
+                escolar, compreender seus impactos e apresentar propostas
+                para melhorar o ambiente de aprendizagem.
+            </p>
+        </section>
+
+        <section id="problemas">
+            <h2>Problemas identificados</h2>
+
+            <article>
+                <h3>Rampa interditada</h3>
+                <p>
+                    A rampa da escola está interditada há mais de um ano,
+                    segundo os relatos observados pela equipe. O acesso
+                    alternativo pelas escadas pode dificultar a circulação
+                    de pessoas com mobilidade reduzida.
+                </p>
+            </article>
+
+            <article>
+                <h3>Entrada pelo estacionamento</h3>
+                <p>
+                    A entrada utilizada pelos estudantes foi direcionada
+                    para o estacionamento, uma situação que merece ser
+                    investigada quanto à circulação e à segurança.
+                </p>
+            </article>
+
+            <article>
+                <h3>Áreas sem cobertura</h3>
+                <p>
+                    Existem áreas próximas às salas de aula sem teto,
+                    que precisam ser documentadas e avaliadas.
+                </p>
+            </article>
+
+            <article>
+                <h3>Problemas na quadra</h3>
+                <p>
+                    Foram observados buracos na cobertura da quadra,
+                    que precisam de avaliação e reparo pelos responsáveis.
+                </p>
+            </article>
+        </section>
+
+        <section id="documentario">
+            <h2>A realidade em imagens</h2>
+
+            <p>
+                Um registro audiovisual produzido pelos estudantes
+                para apresentar os problemas encontrados na escola.
+            </p>
+
+            <video controls width="100%">
+                <source src="video-escola.mp4" type="video/mp4">
+                Seu navegador não conseguiu reproduzir este vídeo.
+            </video>
+
+            <p>
+                <small>
+                    Documentário estudantil: infraestrutura escolar.
+                </small>
+            </p>
+        </section>
+
+        <section id="painel-interativo">
+            <h2>Explore os problemas</h2>
+        
+            <p>
+                Selecione um dos problemas para conhecer seus impactos
+                e as possíveis medidas de melhoria.
+            </p>
+        
+            <div class="botoes-problemas">
+                <button data-problema="rampa">Rampa interditada</button>
+                <button data-problema="entrada">Entrada da escola</button>
+                <button data-problema="cobertura">Áreas sem teto</button>
+                <button data-problema="quadra">Quadra escolar</button>
+            </div>
+        
+            <div id="detalhes-problema" aria-live="polite">
+                <h3>Escolha um problema acima</h3>
+                <p>As informações aparecerão aqui.</p>
+            </div>
+        </section>
+
+        <section id="solucoes">
+            <h2>Propostas de melhoria</h2>
+
+            <ul>
+                <li>Registrar os problemas por meio de fotos e relatos.</li>
+                <li>Investigar as possíveis causas e os impactos.</li>
+                <li>Apresentar os problemas à direção da escola.</li>
+                <li>Solicitar avaliação técnica das áreas danificadas.</li>
+                <li>Acompanhar as medidas e os reparos realizados.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Projeto escolar | Escola em Foco</p>
+        <p>Uma iniciativa para refletir sobre a infraestrutura escolar.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
