@@ -4,133 +4,297 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escola em Foco | Infraestrutura</title>
+
+    <title>Escola em Foco | ETEANL</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- CABEÇALHO -->
     <header>
+        <p class="nome-escola">
+            ETE ALCIDES DO NASCIMENTO LINS
+        </p>
+
         <h1>Escola em Foco</h1>
-        <p>Infraestrutura, acessibilidade e qualidade de ensino</p>
+
+        <p>
+            Infraestrutura, acessibilidade e qualidade de ensino
+        </p>
 
         <nav>
             <a href="#inicio">Início</a>
             <a href="#problemas">Problemas</a>
+            <a href="#painel-interativo">Explore</a>
             <a href="#documentario">Documentário</a>
             <a href="#solucoes">Soluções</a>
+            <a href="#equipe">Nossa equipe</a>
         </nav>
     </header>
 
     <main>
 
+        <!-- APRESENTAÇÃO -->
         <section id="inicio">
-            <h2>Uma escola melhor começa com a mudança</h2>
+            <span class="etiqueta">PROJETO ESCOLAR • ETEANL</span>
+
+            <h2>
+                Uma escola melhor começa com a mudança
+            </h2>
 
             <p>
-                Este projeto busca identificar problemas na infraestrutura
-                escolar, compreender seus impactos e apresentar propostas
-                para melhorar o ambiente de aprendizagem.
+                A infraestrutura escolar é fundamental para garantir
+                um ambiente adequado de aprendizagem, acessibilidade
+                e segurança para toda a comunidade.
             </p>
+
+            <p>
+                Este projeto busca documentar problemas observados
+                na ETE Alcides do Nascimento Lins, investigar seus
+                impactos e apresentar propostas de melhoria.
+            </p>
+
+            <a class="botao-link" href="#problemas">
+                Conheça os problemas
+            </a>
         </section>
 
+        <!-- PROBLEMAS IDENTIFICADOS -->
         <section id="problemas">
             <h2>Problemas identificados</h2>
 
+            <p class="introducao">
+                Conheça as situações que motivaram a realização
+                deste projeto.
+            </p>
+
             <article>
                 <h3>Rampa interditada</h3>
+
                 <p>
-                    A rampa da escola está interditada há mais de um ano,
-                    segundo os relatos observados pela equipe. O acesso
-                    alternativo pelas escadas pode dificultar a circulação
-                    de pessoas com mobilidade reduzida.
+                    Segundo os relatos da equipe, a rampa da escola
+                    está interditada há mais de um ano.
+                </p>
+
+                <p>
+                    O uso das escadas como alternativa pode dificultar
+                    a circulação de pessoas com mobilidade reduzida.
                 </p>
             </article>
 
             <article>
                 <h3>Entrada pelo estacionamento</h3>
+
                 <p>
-                    A entrada utilizada pelos estudantes foi direcionada
-                    para o estacionamento, uma situação que merece ser
-                    investigada quanto à circulação e à segurança.
+                    Os estudantes precisam utilizar o estacionamento
+                    como acesso à escola.
+                </p>
+
+                <p>
+                    É importante avaliar as condições de circulação
+                    e a segurança desse trajeto.
                 </p>
             </article>
 
             <article>
                 <h3>Áreas sem cobertura</h3>
+
                 <p>
-                    Existem áreas próximas às salas de aula sem teto,
-                    que precisam ser documentadas e avaliadas.
+                    Há áreas próximas às salas de aula sem teto,
+                    conforme observado pelos estudantes.
+                </p>
+
+                <p>
+                    Esses locais precisam ser avaliados quanto
+                    à exposição à chuva e ao sol.
                 </p>
             </article>
 
             <article>
                 <h3>Problemas na quadra</h3>
+
                 <p>
-                    Foram observados buracos na cobertura da quadra,
-                    que precisam de avaliação e reparo pelos responsáveis.
+                    Foram observados buracos na cobertura da quadra
+                    escolar.
+                </p>
+
+                <p>
+                    A situação precisa de avaliação técnica para
+                    identificar os reparos necessários.
                 </p>
             </article>
         </section>
 
+        <!-- PAINEL INTERATIVO -->
+        <section id="painel-interativo">
+            <h2>Explore os problemas</h2>
+
+            <p>
+                Selecione um dos problemas para conhecer os
+                possíveis impactos e as propostas de melhoria.
+            </p>
+
+            <div class="botoes-problemas">
+                <button data-problema="rampa">
+                    Rampa interditada
+                </button>
+
+                <button data-problema="entrada">
+                    Entrada da escola
+                </button>
+
+                <button data-problema="cobertura">
+                    Áreas sem teto
+                </button>
+
+                <button data-problema="quadra">
+                    Quadra escolar
+                </button>
+            </div>
+
+            <div id="detalhes-problema" aria-live="polite">
+                <h3>Escolha um problema acima</h3>
+
+                <p>
+                    As informações aparecerão aqui.
+                </p>
+            </div>
+        </section>
+
+        <!-- DOCUMENTÁRIO -->
         <section id="documentario">
             <h2>A realidade em imagens</h2>
 
             <p>
-                Um registro audiovisual produzido pelos estudantes
-                para apresentar os problemas encontrados na escola.
+                O registro audiovisual deste projeto apresentará
+                imagens dos locais observados e, se possível,
+                relatos da comunidade escolar.
             </p>
 
-            <video controls width="100%">
-                <source src="video-escola.mp4" type="video/mp4">
+            <video controls preload="metadata">
+                <source
+                    src="video-escola.mp4"
+                    type="video/mp4"
+                >
+
                 Seu navegador não conseguiu reproduzir este vídeo.
             </video>
 
             <p>
                 <small>
-                    Documentário estudantil: infraestrutura escolar.
+                    Documentário estudantil • ETEANL
                 </small>
             </p>
         </section>
 
-        <section id="painel-interativo">
-            <h2>Explore os problemas</h2>
-        
-            <p>
-                Selecione um dos problemas para conhecer seus impactos
-                e as possíveis medidas de melhoria.
-            </p>
-        
-            <div class="botoes-problemas">
-                <button data-problema="rampa">Rampa interditada</button>
-                <button data-problema="entrada">Entrada da escola</button>
-                <button data-problema="cobertura">Áreas sem teto</button>
-                <button data-problema="quadra">Quadra escolar</button>
-            </div>
-        
-            <div id="detalhes-problema" aria-live="polite">
-                <h3>Escolha um problema acima</h3>
-                <p>As informações aparecerão aqui.</p>
-            </div>
-        </section>
-
+        <!-- PROPOSTAS DE SOLUÇÃO -->
         <section id="solucoes">
             <h2>Propostas de melhoria</h2>
 
+            <p>
+                A partir dos problemas identificados, propomos
+                medidas que podem contribuir para melhorar
+                a infraestrutura escolar.
+            </p>
+
             <ul>
-                <li>Registrar os problemas por meio de fotos e relatos.</li>
-                <li>Investigar as possíveis causas e os impactos.</li>
-                <li>Apresentar os problemas à direção da escola.</li>
-                <li>Solicitar avaliação técnica das áreas danificadas.</li>
-                <li>Acompanhar as medidas e os reparos realizados.</li>
+                <li>
+                    Registrar os problemas por meio de fotografias
+                    e relatos.
+                </li>
+
+                <li>
+                    Investigar as possíveis causas e consequências.
+                </li>
+
+                <li>
+                    Solicitar informações à direção sobre as
+                    interdições e os reparos pendentes.
+                </li>
+
+                <li>
+                    Solicitar avaliação técnica das áreas danificadas.
+                </li>
+
+                <li>
+                    Acompanhar as medidas adotadas pelos responsáveis.
+                </li>
+
+                <li>
+                    Promover o diálogo entre estudantes,
+                    direção e comunidade escolar.
+                </li>
             </ul>
+        </section>
+
+        <!-- EQUIPE -->
+        <section id="equipe">
+            <h2>Quem está por trás do projeto?</h2>
+
+            <p class="introducao">
+                Conheça os estudantes responsáveis pelo
+                desenvolvimento deste trabalho.
+            </p>
+
+            <div class="integrantes">
+
+                <article class="cartao-integrante">
+                    <span class="numero-integrante">01</span>
+                    <h3>Arthur Passos</h3>
+                    <p>Integrante do projeto</p>
+                </article>
+
+                <article class="cartao-integrante">
+                    <span class="numero-integrante">02</span>
+                    <h3>Miguel Messias</h3>
+                    <p>Integrante do projeto</p>
+                </article>
+
+                <article class="cartao-integrante">
+                    <span class="numero-integrante">03</span>
+                    <h3>Tarcio Cristiano</h3>
+                    <p>Integrante do projeto</p>
+                </article>
+
+                <article class="cartao-integrante">
+                    <span class="numero-integrante">04</span>
+                    <h3>Richard Henrique</h3>
+                    <p>Integrante do projeto</p>
+                </article>
+
+            </div>
+
+            <div class="identificacao-escola">
+                <h3>ETE Alcides do Nascimento Lins</h3>
+
+                <p>
+                    ETEANL • Projeto de investigação e propostas
+                    de melhoria da infraestrutura escolar.
+                </p>
+            </div>
         </section>
 
     </main>
 
+    <!-- RODAPÉ -->
     <footer>
-        <p>Projeto escolar | Escola em Foco</p>
-        <p>Uma iniciativa para refletir sobre a infraestrutura escolar.</p>
+        <h3>Escola em Foco</h3>
+
+        <p>
+            ETE Alcides do Nascimento Lins • ETEANL
+        </p>
+
+        <p>
+            Desenvolvido por Arthur Passos, Miguel Messias,
+            Tarcio Cristiano e Richard Henrique.
+        </p>
+
+        <p class="rodape-final">
+            Informação, participação e propostas para uma
+            escola melhor.
+        </p>
     </footer>
 
     <script src="script.js"></script>
