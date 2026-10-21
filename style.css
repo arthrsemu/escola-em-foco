@@ -9,6 +9,40 @@
     margin-bottom: 8px;
 }
 
+/* Centralizar os textos das seções */
+main {
+    text-align: center;
+}
+
+/* Centralizar os títulos */
+section h2 {
+    border-left: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+/* Centralizar os cartões */
+article {
+    text-align: center;
+}
+
+/* Centralizar os botões */
+.botoes-problemas {
+    justify-content: center;
+}
+
+/* Centralizar os integrantes */
+.integrantes {
+    text-align: center;
+}
+
+/* Centralizar o conteúdo do painel */
+#detalhes-problema {
+    text-align: center;
+    border-left: none;
+    border-top: 4px solid #69a981;
+}
+
 .etiqueta {
     display: inline-block;
     color: #367c61;
