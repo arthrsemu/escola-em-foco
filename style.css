@@ -381,3 +381,62 @@ footer p {
         letter-spacing: 0;
     }
 }
+/* ========================================
+   CORREÇÃO DAS FOTOS E CARTÕES DA EQUIPE
+======================================== */
+
+.integrantes {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+.integrantes article {
+    flex: 1 1 220px;
+    width: 100%;
+    max-width: 280px;
+    min-width: 0;
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Impede que as imagens ultrapassem os cartões */
+.integrantes img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 10px;
+    margin: 15px auto;
+}
+    border-radius: 10px;
+    margin: 15px auto;
+}
+
+/* Ajustes para celular */
+@media (max-width: 650px) {
+
+    .integrantes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .integrantes article {
+        width: 100%;
+        max-width: 350px;
+        flex: none;
+    }
+
+    .integrantes img {
+        width: 100%;
+        max-width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+}
