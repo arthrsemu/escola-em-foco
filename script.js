@@ -1,58 +1,57 @@
+const problemas = {
+  rampa: {
+    titulo: "Rampa interditada",
+    fotos: [""],
+    impactos:
+      "Dificulta o acesso de pessoas com mobilidade reduzida e obriga o uso de escadas.",
+    melhorias:
+      "Solicitar à direção informações sobre a interdição e pedir avaliação técnica para reabrir a rampa."
+  },
+  entrada: {
+    titulo: "Entrada pelo estacionamento",
+    fotos: ["imagens/entrada.jpg"],
+    impactos:
+      "Estudantes dividem o espaço com veículos, o que pode representar risco à segurança.",
+    melhorias:
+      "Propor um acesso exclusivo para pedestres, com sinalização e faixa de circulação."
+  },
+  cobertura: {
+    titulo: "Áreas sem teto",
+    fotos: ["imagens/cobertura.jpg"],
+    impactos:
+      "Exposição à chuva e ao sol em áreas próximas às salas de aula.",
+    melhorias:
+      "Solicitar a instalação de cobertura nesses trechos."
+  },
+  quadra: {
+    titulo: "Quadra escolar",
+    fotos: ["imagens/quadra.jpg"],
+    impactos:
+      "Buracos na cobertura podem causar goteiras e limitar o uso da quadra.",
+    melhorias:
+      "Pedir avaliação técnica e reparo da cobertura."
+  }
+};
 
-/* ===== PAINEL INTERATIVO ===== */
+const botoes = document.querySelectorAll(".botoes-problemas button");
+const detalhes = document.getElementById("detalhes-problema");
 
-#painel-interativo {
-    background-color: white;
-    padding: 30px;
-    border-radius: 16px;
-    border: 1px solid #dce7df;
-}
+botoes.forEach((botao) => {
+  botao.addEventListener("click", () => {
+    const p = problemas[botao.dataset.problema];
+    if (!p) return;
 
-.botoes-problemas {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin: 22px 0;
-}
+    const fotos = p.fotos
+      .map((src) => `<img src="${src}" alt="${p.titulo}" loading="lazy">`)
+      .join("");
 
-.botoes-problemas button {
-    background-color: #245d49;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    padding: 12px 16px;
-    font-size: 0.95rem;
-    cursor: pointer;
-    transition: background-color 0.2s,
-                transform 0.2s;
-}
+    detalhes.innerHTML = `
+      <h3>${p.titulo}</h3>
+      <div class="galeria-problema">${fotos}</div>
+      <p><strong>Possíveis impactos:</strong> ${p.impactos}</p>
+      <p><strong>Propostas de melhoria:</strong> ${p.melhorias}</p>
+    `;
 
-.botoes-problemas button:hover {
-    background-color: #173d35;
-    transform: translateY(-2px);
-}
-
-.botoes-problemas button:focus-visible {
-    outline: 3px solid #69a981;
-    outline-offset: 3px;
-}
-
-#detalhes-problema {
-    background-color: #edf4ef;
-    padding: 22px;
-    border-radius: 10px;
-    border-left: 4px solid #69a981;
-}
-
-#detalhes-problema h3 {
-    color: #245d49;
-    margin-bottom: 12px;
-}
-
-#detalhes-problema p {
-    margin-bottom: 12px;
-}
-
-#detalhes-problema p:last-child {
-    margin-bottom: 0;
-}
+    botoes.forEach((b) => b.classList.toggle("ativo", b === botao));
+  });
+});
