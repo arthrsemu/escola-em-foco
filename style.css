@@ -440,3 +440,26 @@ footer p {
         object-fit: cover;
     }
 }
+.galeria-problema {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 12px;
+    margin: 15px 0 20px;
+}
+
+.galeria-problema img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid var(--borda);
+}
+
+#detalhes-problema p {
+    margin-bottom: 12px;
+}
+
+.botoes-problemas button.ativo {
+    background-color: #17618d;
+    border-color: var(--azul);
+}
