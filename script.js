@@ -1,7 +1,7 @@
 const problemas = {
   rampa: {
     titulo: "Rampa interditada",
-    fotos: [""],
+    fotos: ["IMG-20261106-WA0009.jpg"],
     impactos:
       "Dificulta o acesso de pessoas com mobilidade reduzida e obriga o uso de escadas.",
     melhorias:
@@ -9,7 +9,7 @@ const problemas = {
   },
   entrada: {
     titulo: "Entrada pelo estacionamento",
-    fotos: ["imagens/entrada.jpg"],
+    fotos: [""],
     impactos:
       "Estudantes dividem o espaço com veículos, o que pode representar risco à segurança.",
     melhorias:
@@ -17,7 +17,7 @@ const problemas = {
   },
   cobertura: {
     titulo: "Áreas sem teto",
-    fotos: ["imagens/cobertura.jpg"],
+    fotos: ["IMG-20261106-WA0003.jpg"],
     impactos:
       "Exposição à chuva e ao sol em áreas próximas às salas de aula.",
     melhorias:
