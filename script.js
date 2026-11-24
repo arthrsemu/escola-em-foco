@@ -9,17 +9,17 @@ const problemas = {
   },
   entrada: {
     titulo: "Entrada pelo estacionamento",
-    fotos: [""],
+    fotos: ["IMG_20261119_064221.jpg"],
     impactos:
       "Estudantes dividem o espaço com veículos, o que pode representar risco à segurança.",
     melhorias:
-      "Propor um acesso exclusivo para pedestres, com sinalização e faixa de circulação."
+      "Solicitar à direção informações sobre a interdição e pedir avaliação técnica para reabrir a rampa."
   },
   cobertura: {
     titulo: "Áreas sem teto",
     fotos: ["IMG-20261106-WA0003.jpg"],
     impactos:
-      "Exposição à chuva e ao sol em áreas próximas às salas de aula.",
+      "Risco de queda da cobertura e exposição a fios elétricos.",
     melhorias:
       "Solicitar a instalação de cobertura nesses trechos."
   },
